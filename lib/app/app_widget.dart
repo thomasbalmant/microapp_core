@@ -13,6 +13,8 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           spacing: 10,
           children: [Text('CFM'), CustomButton()],
         ),
