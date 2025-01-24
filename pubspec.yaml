@@ -1,6 +1,7 @@
 name: core
 description: "A new Flutter package project."
 version: 0.0.1
+publish_to: none 
 homepage:
 
 environment:
@@ -10,7 +11,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  commons:
+    git:
+      url: https://github.com/thomasbalmant/microapp_commons.git
+      ref: v1.1.0 
+ 
 dev_dependencies:
   flutter_test:
     sdk: flutter
