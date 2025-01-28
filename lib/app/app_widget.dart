@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:commons/widgets/commons.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class HomePageMicroFront extends StatefulWidget {
+  const HomePageMicroFront({
+    super.key,
+    required this.username,
+  });
+  final String username;
+  @override
+  State<HomePageMicroFront> createState() => _HomePageMicroFrontState();
+}
 
+class _HomePageMicroFrontState extends State<HomePageMicroFront> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +24,7 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           spacing: 10,
-          children: [Text('CFM'), CustomButton()],
+          children: [Text('User: ${widget.username}'), CustomButton()],
         ),
       ),
     );
